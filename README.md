@@ -10,38 +10,30 @@
 <hr />
 
 ## **Intro**
-```topojson
+```geojson
 {
-  "type": "Topology",
-  "transform": {
-    "scale": [0.0005000500050005, 0.00010001000100010001],
-    "translate": [100, 0]
-  },
-  "objects": {
-    "example": {
-      "type": "GeometryCollection",
-      "geometries": [
-        {
-          "type": "Point",
-          "properties": {"prop0": "value0"},
-          "coordinates": [4000, 5000]
-        },
-        {
-          "type": "Point",
-          "properties": {"prop0": "value0"},
-          "coordinates": [6000, 7000]
-        },
-        {
-          "type": "Point",
-          "properties": {"prop0": "value0"},
-          "coordinates": [8000, 9000]
-        },
-          "arcs": [[1]]
-        }
-      ]
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": 1,
+      "properties": {
+        "ID": 0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+              [-90,35],
+              [-90,30],
+              [-85,40],
+              [-85,35],
+              [-90,35]
+          ]
+        ]
+      }
     }
-  },
-  "arcs": [[[4000, 0], [1999, 9999], [2000, -9999], [2000, 9999]],[[0, 0], [0, 9999], [2000, 0], [0, -9999], [-2000, 0]]]
+  ]
 }
 ```
 
@@ -52,7 +44,7 @@
 
 <details>
 
-<summary>## **Data Engineer**</summary>
+<summary>Data Engineer</summary>
 
 ### Header
 
@@ -69,7 +61,7 @@ You can add an image or a code block, too.
 
 <details>
 
-<summary>## **Reporting Analyst**</summary>
+<summary>Reporting Analyst</summary>
 
 ### Header
 
@@ -88,7 +80,7 @@ You can add an image or a code block, too.
 
 <details>
 
-<summary>## **Technical Support**</summary>
+<summary>Technical Support</summary>
 
 ### Header
 
@@ -106,7 +98,7 @@ You can add an image or a code block, too.
 
 <details>
 
-<summary>## **Fulfillment and Client Services**</summary>
+<summary>Fulfillment and Client Services</summary>
 
 ### Header
 
@@ -123,7 +115,7 @@ You can add an image or a code block, too.
 
 <details>
 
-<summary>## **Other Projects**</summary>
+<summary>Other Projects</summary>
 
 ### TEA - PM2.5 in Toronto
 
@@ -167,5 +159,5 @@ You can add an image or a code block, too.
 </details>
 
 <hr />
-## **Links**
+## Links
 https://github.com/simsieg/awesome-maps
