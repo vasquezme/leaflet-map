@@ -1,6 +1,7 @@
 # vasquezme.github.io
 
 ![Image of the Moon](https://www.nasa.gov/wp-content/uploads/2015/06/edu_what_is_earth_0.jpg)
+<img src="https://www.nasa.gov/wp-content/uploads/2015/06/edu_what_is_earth_0.jpg" height="600" width="1050" />
 :construction: :canada: :el_salvador:	:new_moon: :earth_americas: :rugby_football:	:musical_note:	:computer:	:construction:
 
 # **Welcome**
