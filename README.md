@@ -184,8 +184,8 @@ Resources:
 
 | Fun| Links |
 | --- | --- |
-| T-SQL | Links |
-![Sound Cloud](https://img.shields.io/badge/sound%20cloud-FF5500?style=for-the-badge&logo=soundcloud&logoColor=white)| ![YouTube Music](https://img.shields.io/badge/YouTube_Music-FF0000?style=for-the-badge&logo=youtube-music&logoColor=white) |
+| T-SQL | [Awesome Maps](https://github.com/simsieg/awesome-maps) |
+![Sound Cloud](https://img.shields.io/badge/sound%20cloud-FF5500?style=for-the-badge&logo=soundcloud&logoColor=white) | ![YouTube Music](https://img.shields.io/badge/YouTube_Music-FF0000?style=for-the-badge&logo=youtube-music&logoColor=white) | 
 
 <br>
 
@@ -193,11 +193,28 @@ Resources:
 
 ![BuyMeACoffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-ffdd00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black)
 
-## **Mapping4Fun**
+
 <hr />
 
 <br>
 
+## **Interests**
+<hr />
+
+Text
+
+<br>
+
+
+## Links
+<hr />
+
+Text
+
+<br>
+
+
+## **Mapping4Fun**
 ```geojson
 {
   "type": "FeatureCollection",
@@ -227,11 +244,5 @@ Resources:
 
 <hr />
 
-## **Interests**
-<hr />
 
-
-<hr />
-## Links
-https://github.com/simsieg/awesome-maps
 
