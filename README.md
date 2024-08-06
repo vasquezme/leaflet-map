@@ -220,7 +220,7 @@ Text
 - Github How to Get Started
 - Gethub Public API
 - Marketing APIs [Marketing API](https://blog.hubspot.com/website/free-open-apis?hubs_content=blog.hubspot.com%2Fwebsite%2Fapi-calls&hubs_content-cta=free%20and%20open%20API)
-
+- https://github.com/RandomFractals/geo-data-viewer#configuration
 
 
 <br>
@@ -241,11 +241,10 @@ Text
         "type": "Polygon",
         "coordinates": [
           [
-              [-79,43],
-              [-79,43],
-              [-79,43],
-              [-79,43],
-              [-79,43]
+              [-79.3785714673522,43.6436467525826, ],
+              [-79.37.43.64],
+              [-79.3.43.64],
+              [-79.3.43.64]
           ]
         ]
       }
