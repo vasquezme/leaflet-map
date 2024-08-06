@@ -212,7 +212,12 @@ Text
 ## Links
 <hr />
 
-Text
+Markdown
+MarkdownGuide
+Chartmaker Directory
+GeeksforGeeks
+Spark Apache
+
 
 <br>
 
