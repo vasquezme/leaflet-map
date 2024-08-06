@@ -93,9 +93,8 @@ You can add an image or a code block, too.
   - Highlight1
   - Batch Scripting for Data Warehousing
       - Creating file managment process to create data management system
-      - CMD line using XCOPY, MD, MOVE, DEL, REN, TREE and others to manage files and directories across business systems.
-      - CMD line used to call on WINZIP and zip files
-      - Files made available to clients
+      - CMD line Batch Scripting using XCOPY, MD, MOVE, DEL, REN, TREE and others to manage files and directories across business systems.
+      - CMD line used to call on WINZIP, zip and rename files for distribution
 
 You can add an image or a code block, too.
 
