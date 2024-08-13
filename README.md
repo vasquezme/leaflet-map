@@ -204,7 +204,10 @@ Resources:
 ## **Interests**
 <hr />
 
-Text
+| Fun| Links |
+| --- | --- |
+| Soft Rock | --- |
+| Deep House | Kai Alce |
 
 <br>
 
