@@ -189,9 +189,9 @@ Resources:
 | --- | --- |
 | T-SQL | [Awesome Maps](https://github.com/simsieg/awesome-maps) |
 ![Sound Cloud](https://img.shields.io/badge/sound%20cloud-FF5500?style=for-the-badge&logo=soundcloud&logoColor=white) | ![YouTube Music](https://img.shields.io/badge/YouTube_Music-FF0000?style=for-the-badge&logo=youtube-music&logoColor=white) | 
-![Kepler](https://docs.kepler.gl/) | ![Kepler](https://docs.kepler.gl/) | 
+(https://docs.kepler.gl/) | (https://docs.kepler.gl/) | 
 
-![Toronto_Star_-_Joshua_Chong](https://www.thestar.com/entertainment/visual-arts/an-inside-look-at-the-escalating-crisis-in-toronto-arts-we-have-to-come-together/article_a328aaf8-f5aa-11ee-aad3-33ecca95b947.html?utm_medium=social&utm_source=email&utm_campaign=user-share)
+(https://www.thestar.com/entertainment/visual-arts/an-inside-look-at-the-escalating-crisis-in-toronto-arts-we-have-to-come-together/article_a328aaf8-f5aa-11ee-aad3-33ecca95b947.html?utm_medium=social&utm_source=email&utm_campaign=user-share)
 
 <br>
 
