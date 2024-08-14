@@ -189,12 +189,6 @@ Resources:
 | --- | --- |
 | T-SQL | [Awesome Maps](https://github.com/simsieg/awesome-maps) |
 ![Sound Cloud](https://img.shields.io/badge/sound%20cloud-FF5500?style=for-the-badge&logo=soundcloud&logoColor=white) | ![YouTube Music](https://img.shields.io/badge/YouTube_Music-FF0000?style=for-the-badge&logo=youtube-music&logoColor=white) | 
-(https://docs.kepler.gl/) | (https://docs.kepler.gl/) | 
-
-(https://www.thestar.com/entertainment/visual-arts/an-inside-look-at-the-escalating-crisis-in-toronto-arts-we-have-to-come-together/article_a328aaf8-f5aa-11ee-aad3-33ecca95b947.html?utm_medium=social&utm_source=email&utm_campaign=user-share)
-(https://blog.hubspot.com/website/free-open-apis?hubs_content=blog.hubspot.com%2Fwebsite%2Fapi-calls&hubs_content-cta=free%20and%20open%20API)
-(https://www.keybr.com/)
-(https://www.tutorialspoint.com/index.htm)
 
 <br>
 
@@ -232,6 +226,12 @@ Support Your Local Library
 - Gethub Public API
 - Marketing APIs [Marketing API](https://blog.hubspot.com/website/free-open-apis?hubs_content=blog.hubspot.com%2Fwebsite%2Fapi-calls&hubs_content-cta=free%20and%20open%20API)
 - https://github.com/RandomFractals/geo-data-viewer#configuration
+- https://www.imperva.com/learn/data-security/data-lineage/#:~:text=Data%20Lineage%20for%20Data%20Processing%2C%20Ingestion%2C%20and%20Querying,-When%20building%20a&text=You%20need%20to%20keep%20track%20of%20tables%2C%20views%2C%20columns%2C,be%20used%20for%20lineage%20analysis
+- (https://docs.kepler.gl/) | (https://docs.kepler.gl/)
+- (https://www.thestar.com/entertainment/visual-arts/an-inside-look-at-the-escalating-crisis-in-toronto-arts-we-have-to-come-together/article_a328aaf8-f5aa-11ee-aad3-33ecca95b947.html?utm_medium=social&utm_source=email&utm_campaign=user-share)
+- (https://blog.hubspot.com/website/free-open-apis?hubs_content=blog.hubspot.com%2Fwebsite%2Fapi-calls&hubs_content-cta=free%20and%20open%20API)
+- (https://www.keybr.com/)
+- (https://www.tutorialspoint.com/index.htm)
 
 
 <br>
