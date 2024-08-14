@@ -192,6 +192,9 @@ Resources:
 (https://docs.kepler.gl/) | (https://docs.kepler.gl/) | 
 
 (https://www.thestar.com/entertainment/visual-arts/an-inside-look-at-the-escalating-crisis-in-toronto-arts-we-have-to-come-together/article_a328aaf8-f5aa-11ee-aad3-33ecca95b947.html?utm_medium=social&utm_source=email&utm_campaign=user-share)
+(https://blog.hubspot.com/website/free-open-apis?hubs_content=blog.hubspot.com%2Fwebsite%2Fapi-calls&hubs_content-cta=free%20and%20open%20API)
+(https://www.keybr.com/)
+(https://www.tutorialspoint.com/index.htm)
 
 <br>
 
