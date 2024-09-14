@@ -1,3 +1,3 @@
 ## Sample Leaflet Map
 
-Map example.
+Map example for reference.
