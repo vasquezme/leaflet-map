@@ -27,8 +27,8 @@
 
   /* Set up the initial map center and zoom level */
   var map = L.map('map', {
-    center: [42.77, -72.99], // EDIT coordinates to re-center map
-    zoom: 8,  // EDIT from 1 (zoomed out) to 18 (zoomed in)
+    center: [43.64, -79.38], // EDIT coordinates to re-center map 43.64159021479595, -79.38793608540173
+    zoom: 12,  // EDIT from 1 (zoomed out) to 18 (zoomed in)
     scrollWheelZoom: false
   });
 
@@ -39,7 +39,7 @@
   }).addTo(map);
 
   /* Display a point marker with pop-up text */
-  L.marker([42.77, -72.99]).addTo(map) // EDIT marker coordinates
+  L.marker([43.64, -79.38]).addTo(map) // EDIT marker coordinates
   .bindPopup("Mauricio's practice marker"); // EDIT pop-up text message
 
   </script>
