@@ -38,15 +38,58 @@
       attribution: 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community'
   }).addTo(map);
 
+    var plants = {
+    "type":"FeatureCollection",
+    "features":[
+        {
+            "type":"Feature",
+            "properties":{
+                "code":2,
+                "plant_name":"Bankhead Dam",
+                "capacity_mw":56,
+                "fuel_source":{
+                    "Hydro":56
+                }
+            },
+            "geometry":{
+                "type":"Point",
+                "coordinates":[-87.35682,33.45867]
+            }
+        },{
+            "type":"Feature",
+            "properties":{
+                "code":3,
+                "plant_name":"Barry",
+                "capacity_mw":2574.5,
+                "fuel_source":{
+                    "Coal":1612.5,
+                    "Natural Gas":962
+                }
+            },
+            "geometry":{
+                "type":"Point",
+                "coordinates":[-88.0103,31.0069]
+            }
+        },{
+            "type":"Feature",
+            "properties":{
+                "code":4,
+                "plant_name":"Walter Bouldin Dam",
+                "capacity_mw":225.9,
+                "fuel_source":{
+                    "Hydro":225.9
+                }
+            },
+            "geometry":{
+                "type":"Point",
+                "coordinates":[-86.28306,32.58389]
+            }
+        }, …
+
   /* Display a point marker with pop-up text */
   L.marker([43.64, -79.38]).addTo(map) // EDIT marker coordinates
   .bindPopup("Toronto"); // EDIT pop-up text message
-    L.marker([43.6683, -79.3945]).addTo(map)
-  .bindPopup("Royal Ontario Museum"); //43.6683792380287, -79.39454964092549
-    L.marker([43.665, -79.303]).addTo(map)
-  .bindPopup("Toronto Beach"); -79.30
-    L.marker([43.631, -79.472]).addTo(map)
-  .bindPopup("Toronto Waterfront"); //43.631606802378116, -79.47277170003382
+
 
 
     
