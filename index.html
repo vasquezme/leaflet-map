@@ -38,59 +38,29 @@
       attribution: 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community'
   }).addTo(map);
 
-    var plants = {
-    "type":"FeatureCollection",
-    "features":[
-        {
-            "type":"Feature",
-            "properties":{
-                "code":2,
-                "plant_name":"Bankhead Dam",
-                "capacity_mw":56,
-                "fuel_source":{
-                    "Hydro":56
-                }
-            },
-            "geometry":{
-                "type":"Point",
-                "coordinates":[-87.35682,33.45867]
-            }
-        },{
-            "type":"Feature",
-            "properties":{
-                "code":3,
-                "plant_name":"Barry",
-                "capacity_mw":2574.5,
-                "fuel_source":{
-                    "Coal":1612.5,
-                    "Natural Gas":962
-                }
-            },
-            "geometry":{
-                "type":"Point",
-                "coordinates":[-88.0103,31.0069]
-            }
-        },{
-            "type":"Feature",
-            "properties":{
-                "code":4,
-                "plant_name":"Walter Bouldin Dam",
-                "capacity_mw":225.9,
-                "fuel_source":{
-                    "Hydro":225.9
-                }
-            },
-            "geometry":{
-                "type":"Point",
-                "coordinates":[-86.28306,32.58389]
-            }
-        }, …
+  function onEachFeature(feature, layer) {
+      // does this feature have a property named popupContent?
+      if (feature.properties && feature.properties.popupContent) {
+          layer.bindPopup(feature.properties.popupContent);
+      }
+  }
 
-  /* Display a point marker with pop-up text */
-  L.marker([43.64, -79.38]).addTo(map) // EDIT marker coordinates
-  .bindPopup("Toronto"); // EDIT pop-up text message
+  var geojsonFeature = {
+      "type": "Feature",
+      "properties": {
+          "name": "Coors Field",
+          "amenity": "Baseball Stadium",
+          "popupContent": "This is where the Rockies play!"
+      },
+      "geometry": {
+          "type": "Point",
+          "coordinates": [-104.99404, 39.75621]
+      }
+  };
 
-
+  L.geoJSON(geojsonFeature, {
+      onEachFeature: onEachFeature
+  }).addTo(map);
 
     
   </script>
