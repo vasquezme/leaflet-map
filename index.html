@@ -1,98 +1,56 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>leaflet-map-simple</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta charset="utf-8">
+<title>leaflet-map-simple</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8">
 
-  <!-- Load Leaflet code library: see https://leafletjs.com/download.html -->
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css" integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14=" crossorigin="" />
-  <script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js" integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg=" crossorigin=""></script>
+<!-- Load Leaflet code library: see https://leafletjs.com/download.html -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css" integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14=" crossorigin="" />
+<script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js" integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg=" crossorigin=""></script>
 
-  <!-- Position the map and title with Cascading Style Sheet (CSS) -->
-  <style>
-  body { margin:0; padding:0; }
-  #map { position: absolute; top:0; bottom:0; right:0; left:0; }
-  #map-title { position: relative; margin-top: 10px; margin-left: 50px; float: left; background: white; border: 2px solid rgba(0,0,0,0.2); padding: 6px 8px; font-family: Helvetica; font-weight: bold; font-size: 24px; z-index: 800; }
-  </style>
+<!-- Position the map and title with Cascading Style Sheet (CSS) -->
+<style>
+body { margin:0; padding:0; }
+#map { position: absolute; top:0; bottom:0; right:0; left:0; }
+#map-title { position: relative; margin-top: 10px; margin-left: 50px; float: left; background: white; border: 2px solid rgba(0,0,0,0.2); padding: 6px 8px; font-family: Helvetica; font-weight: bold; font-size: 24px; z-index: 800; }
+</style>
 </head>
 <body>
 
-  <!-- Display the map and title with HTML division tags  -->
-  <div id="map-title">Mauricio's Practice Map</div>
-  <div id="map"></div>
+<!-- Display the map and title with HTML division tags  -->
+<div id="map-title">Mauricio's Practice Map</div>
+<div id="map"></div>
 
-  <!-- Create the interactive map content with JavaScript (.js) -->
-  <script>
+<!-- Create the interactive map content with JavaScript (.js) -->
+<script>
 
-  /* Set up the initial map center and zoom level */
-  var map = L.map('map', {
-    center: [43.64, -79.38], // EDIT coordinates to re-center map 43.64159021479595, -79.38793608540173
-    zoom: 12,  // EDIT from 1 (zoomed out) to 18 (zoomed in)
-    scrollWheelZoom: false
-  });
+/* Set up the initial map center and zoom level */
+var map = L.map('map', {
+center: [43.64, -79.38], // EDIT coordinates to re-center map 43.64159021479595, -79.38793608540173
+zoom: 12,  // EDIT from 1 (zoomed out) to 18 (zoomed in)
+scrollWheelZoom: false
+});
 
-  /* display basemap tiles -- see others at https://leaflet-extras.github.io/leaflet-providers/preview/ */
-  L.tileLayer(
-    'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', { // https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}
-      attribution: 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community'
-  }).addTo(map);
+/* display basemap tiles -- see others at https://leaflet-extras.github.io/leaflet-providers/preview/ */
+L.tileLayer(
+'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', { // https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}
+attribution: 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community'
+}).addTo(map);
 
-    var plants = {
-    "type":"FeatureCollection",
-    "features":[
-        {
-            "type":"Feature",
-            "properties":{
-                "code":2,
-                "plant_name":"Bankhead Dam",
-                "capacity_mw":56,
-                "fuel_source":{
-                    "Hydro":56
-                }
-            },
-            "geometry":{
-                "type":"Point",
-                "coordinates":[-87.35682,33.45867]
-            }
-        },{
-            "type":"Feature",
-            "properties":{
-                "code":3,
-                "plant_name":"Barry",
-                "capacity_mw":2574.5,
-                "fuel_source":{
-                    "Coal":1612.5,
-                    "Natural Gas":962
-                }
-            },
-            "geometry":{
-                "type":"Point",
-                "coordinates":[-88.0103,31.0069]
-            }
-        },{
-            "type":"Feature",
-            "properties":{
-                "code":4,
-                "plant_name":"Walter Bouldin Dam",
-                "capacity_mw":225.9,
-                "fuel_source":{
-                    "Hydro":225.9
-                }
-            },
-            "geometry":{
-                "type":"Point",
-                "coordinates":[-86.28306,32.58389]
-            }
-        }, …
-
-  /* Display a point marker with pop-up text */
-  L.marker([43.64, -79.38]).addTo(map) // EDIT marker coordinates
-  .bindPopup("Toronto"); // EDIT pop-up text message
+/* Display a point marker with pop-up text */
+L.marker([43.64, -79.38]).addTo(map) // EDIT marker coordinates
+.bindPopup("Toronto"); // EDIT pop-up text message
+L.marker([43.6683, -79.3945]).addTo(map)
+.bindPopup("Royal Ontario Museum"); //43.6683792380287, -79.39454964092549
+L.marker([43.665, -79.303]).addTo(map)
+.bindPopup("Toronto Beach"); -79.30
+L.marker([43.631, -79.472]).addTo(map)
+  .bindPopup("Toronto Harbour"); //43.631606802378116, -79.47277170003382
+  .bindPopup("Toronto Waterfront"); //43.631606802378116, -79.47277170003382
 
 
 
-    
-  </script>
+</script>
 </body>
 </html>
