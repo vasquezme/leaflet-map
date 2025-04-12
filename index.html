@@ -53,6 +53,23 @@ fetch('https://raw.githubusercontent.com/vasquezme/leaflet-map/refs/heads/main/c
   })
   .catch(error => console.error('Error fetching the CSV:', error));
 
+fetch('https://raw.githubusercontent.com/vasquezme/leaflet-map/refs/heads/main/city_of_toronto_line.csv')
+  .then(response => response.text())
+  .then(data => {
+    const rows = data.split("\n").slice(1); // Skip header
+    const coordinates = rows.map(row => {
+      const [name, latitude, longitude] = row.split(",");
+      return latitude && longitude ? [parseFloat(latitude), parseFloat(longitude)] : null;
+    }).filter(Boolean);
+
+    if (coordinates.length > 0) {
+      L.polyline(coordinates, { color: 'blue', weight: 5 }).addTo(map)
+        .bindPopup("Route Path"); // Modify as needed
+    }
+  })
+  .catch(error => console.error('Error fetching the CSV:', error));
+</script>
+
 
 </script>
 </body>
