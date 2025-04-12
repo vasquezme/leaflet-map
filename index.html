@@ -48,7 +48,6 @@ L.marker([43.665, -79.303]).addTo(map)
 L.marker([43.631, -79.472]).addTo(map)
 .bindPopup("Toronto Harbour"); //43.631606802378116, -79.47277170003382
 
-    <script>
 fetch('https://raw.githubusercontent.com/vasquezme/leaflet-map/refs/heads/main/city_of_toronto_poi.csv')
   .then(response => response.text())
   .then(data => {
@@ -63,7 +62,6 @@ fetch('https://raw.githubusercontent.com/vasquezme/leaflet-map/refs/heads/main/c
     });
   })
   .catch(error => console.error('Error fetching the CSV:', error));
-</script>
 
 
 </script>
